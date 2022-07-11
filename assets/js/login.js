@@ -68,7 +68,7 @@ $('#form_login').on('submit', function(e) {
                 // 将登录成功后返回的token保存到localStorage中
             localStorage.setItem('token', res.token)
                 // 跳转到后台主页
-            location.href = 'http://127.0.0.1:5500/code/index.html'
+            location.href = 'http://127.0.0.1:80/code/index.html'
         }
 
 

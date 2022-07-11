@@ -10,7 +10,7 @@ $(function() {
                 // 1.清空本地存储的token
                 localStorage.removeItem('token')
                     // 2. 重新跳转到登录页面
-                location.href = 'http://127.0.0.1:5500/code/login.html'
+                location.href = 'http://127.0.0.1/code/login.html'
                 layer.close(index);
             });
     })

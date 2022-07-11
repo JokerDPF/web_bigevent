@@ -2,7 +2,8 @@
 $.ajaxPrefilter(function(options) {
 
     // 在真正发起ajax请求之前，拼接好请求根路径
-    options.url = 'http://www.liulongbin.top:3007' + options.url
+    // options.url = 'http://www.liulongbin.top:3007' + options.url
+    options.url = 'http://api-breakingnews-web.itheima.net' + options.url
 
     // 统一为有权限的接口，设置headers头
     // 判断options中的url是否含有/my/字段
@@ -21,7 +22,7 @@ $.ajaxPrefilter(function(options) {
             // 1.清空token
             localStorage.removeItem('token')
                 // 2.跳转到登录页面
-            location.href = 'http://127.0.0.1:5500/code/login.html'
+            location.href = 'http://127.0.0.1/code/login.html'
         }
     }
 });
